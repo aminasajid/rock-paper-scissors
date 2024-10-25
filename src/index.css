@@ -1,0 +1,109 @@
+body {
+  background-color: #1e1f26;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive; /* Add this Google Font for a retro feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2e3039;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.game-title {
+  font-size: 1.5rem;
+  color: #ffdd57;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.move-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.move-button img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease;
+}
+
+.move-button:hover img {
+  transform: scale(1.2);
+}
+
+.rock-button img {
+  background-color: #e57373;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.paper-button img {
+  background-color: #64b5f6;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.scissors-button img {
+  background-color: #81c784;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.results {
+  margin-top: 1.5rem;
+}
+
+.result-text {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.result-text.win {
+  color: #66bb6a;
+}
+
+.result-text.lose {
+  color: #ef5350;
+}
+
+.result-text.tie {
+  color: #ffd54f;
+}
+
+.reset-button {
+  margin-top: 1.5rem;
+  background-color: #ff7043;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #f4511e;
+}
